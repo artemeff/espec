@@ -166,10 +166,6 @@ Create a directory called `spec`, and start creating spec files in there. For an
 
 ## Development
 
-Start an Erlang shell with reloader support:
-
-    make dev
-
 Compile new code:
 
     make compile

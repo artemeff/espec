@@ -10,9 +10,6 @@ generate: compile
 	./rebar escriptize
 	mv espec bin/espec
 
-dev: compile
-	erl -pa deps/*/ebin -pa ebin -s inets start -s reloader start
-
 spec: generate
 	./bin/espec spec
 
