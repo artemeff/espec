@@ -10,8 +10,9 @@
     ]).
 
 %% main entry point when called as a standalone script with created with `rebar escriptize`
-main([]) ->
-    usage();
+main(["--help"]) -> usage();
+main(["-h"]) -> usage();
+main([]) -> main(["spec"]);
 main(Args) ->
     espec_bin:run_spec_files_from_args(Args).
 

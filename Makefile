@@ -11,7 +11,7 @@ generate: compile
 	mv espec bin/espec
 
 spec: generate
-	./bin/espec spec
+	./bin/espec
 
 clean:
 	./rebar clean
